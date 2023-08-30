@@ -1,0 +1,23 @@
+.header {
+  background-color: #000;
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+  &__nav__list {
+    display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+  margin-left: 548px;
+
+  
+  }
+}
+
+
+
+
+.header__nav__list__item__text {
+  color: #f5ebeb;
+}
