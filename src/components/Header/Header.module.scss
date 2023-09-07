@@ -3,21 +3,28 @@
   &__nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   &__nav__list {
     display: flex;
-  align-items: center;
-  gap: 32px;
-  list-style: none;
-  margin-left: 548px;
+    align-items: center;
 
-  
+    gap: 32px;
+    list-style: none;
+    margin-left: 543px;
+    padding: 50px 0;
   }
 }
 
-
-
-
+// .isActive {
+//   text-decoration: none;
+//   color: white;
+//   font-weight: 500;
+//   &.active {
+//     color: red;
+//   }
+// }
 .header__nav__list__item__text {
-  color: #f5ebeb;
+  color: white;
+  
 }

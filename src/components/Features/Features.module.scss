@@ -1,0 +1,22 @@
+
+.features_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 124px;
+}
+
+.features_item {
+    width: 201px;
+    text-align: center;
+}
+
+.features_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.features_text {
+    color: white;
+}
