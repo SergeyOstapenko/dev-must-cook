@@ -3,8 +3,8 @@ import { Btn } from "../Btn/Btn";
 
 export const Hero = () => {
   return (
-    <div className="container">
-      <div className={styled.hero}>
+    <div className="container hero">
+      <div>
         <h1 className={styled.title}>
           {" "}
           Прості

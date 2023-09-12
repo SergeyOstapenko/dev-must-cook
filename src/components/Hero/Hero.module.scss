@@ -1,9 +1,11 @@
 .title {
     
     color: #A93B59;
+
+    font-family: var(--font-title);
     font-size: 48px;
     line-height: 1.25;
-    font-weight: 700;
+    font-weight: 500;
     font-style: italic;
 
     margin-bottom: 42px;
@@ -12,8 +14,10 @@
 .span {
     
     color: #F5EBEB;
-    font-size: 96px;
-    margin-left: 110px;
+    font-size: 86px;
+    margin-left: 105px;
+    font-weight: 400;
+    line-height: 0.69;
     text-transform: uppercase;
     // font-family: 'Arial', 'Helvetica';
 }

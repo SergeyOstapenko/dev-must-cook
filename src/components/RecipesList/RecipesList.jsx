@@ -1,8 +1,9 @@
 import { RecipesListItem } from "./RecipesListItem/RecipesListItem";
 import styles from "./RecipesList.module.scss";
 import { FilterMenu } from "../FilterMenu/FilterMenu";
+import { recipes } from "../../data/recipes";
 
-export const RecipesList = ({ recipes }) => {
+export const RecipesList = () => {
   return (
     <div className="container">
       <FilterMenu />

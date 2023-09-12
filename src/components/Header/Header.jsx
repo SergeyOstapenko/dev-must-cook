@@ -12,7 +12,7 @@ export const Header = () => {
           <Link><FaPizzaSlice color="white" size={24}/></Link>
           <ul className={styles.header__nav__list}>
             <li className={styles.header__nav__list__item}>
-              <Link className={styles.header__nav__list__item__text}/*className={({ isActive }) => (isActive ? 'active' : '')}*/>Головна</Link>
+              <Link className={styles.header__nav__list__item__text}>Головна</Link>
             </li>
             <li className={styles.header__nav__list__item}>
               <Link className={styles.header__nav__list__item__text}>Каталог</Link>

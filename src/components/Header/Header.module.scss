@@ -25,6 +25,8 @@
 //   }
 // }
 .header__nav__list__item__text {
-  color: white;
-  
+  color: var(--header-text-color);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
 }

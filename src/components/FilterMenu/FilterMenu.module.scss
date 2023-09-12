@@ -1,48 +1,71 @@
-
 .filter_container {
-    width: 1085px;
-    border-radius: 15px;
-    border: 1px solid rgba(0,0,0,0);
-    background-color: rgb(185, 106, 127);
+  width: 1085px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  background-color: rgba(185, 106, 127, 0.5);
 
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 50px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 .filter_title {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    text-align: center;
-    color: white;
+  font-size: 36px;
+  line-height: 1.25;
+  font-weight: 600;
+  text-align: center;
+
+  color: var(--menu-filter-color);
+  font-family: var(--font-title);
+
+  margin-bottom: 20px;
 }
 
 .filter_list {
-    border: 1px solid rgba(0,0,0,0);
-    background-color: rgba(185, 106, 127,50%);
-    border-radius: 15px;
-    display: flex;
-    justify-content: space-around;
-    color: white;
+  border: 1px solid rgba(0, 0, 0, 0);
+  background-color: #b96a7f;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  color: white;
 }
 
 .filter_item {
-    position: relative;
-    &:hover  > ul {
-        display: initial;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid rgba(68, 68, 68, 50%);
+  &:last-child {
+    border-right: none;
+  }
+
+  position: relative;
+  &:hover > ul {
+    display: initial;
+  }
 }
 
 .filter_subList {
-    width: 224px;
-    position: absolute;
-    background: rgba(185, 106, 127,50%);
-    border-radius: 15px;
-    display: none;
+  width: 200px;
+  position: absolute;
+  background: rgba(185, 106, 127, 50%);
+  border-radius: 15px;
+  display: none;
+  top: 83px;
+  padding: 20px 16px;
 }
 
 .filter_subItem {
-    width: 100%;
-    border-bottom: 1px solid #444444;
+  width: 100%;
+  border-bottom: 1px solid #444444;
+  margin-bottom: 12px;
+}
+
+.filter_text {
+  font-weight: 300;
+  font-size: 18px;
+  color: var(--menu-filter-color);
+
+  padding: 20px;
+  margin-right: 74px;
 }

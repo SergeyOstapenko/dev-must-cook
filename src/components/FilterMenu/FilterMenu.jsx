@@ -1,4 +1,5 @@
 import styles from "./FilterMenu.module.scss";
+import { FaSortDown } from "react-icons/fa";
 
 export const FilterMenu = () => {
   return (
@@ -6,7 +7,8 @@ export const FilterMenu = () => {
       <h3 className={styles.filter_title}>Обрати рецепт</h3>
       <ul className={styles.filter_list}>
         <li className={styles.filter_item}>
-          <p>Сніданок</p>
+          <p className={styles.filter_text}>Сніданок...</p>
+          <FaSortDown size={16} />
           <ul className={styles.filter_subList}>
             <li className={styles.filter_subItem}>
               <p>Яєшня</p>
@@ -19,17 +21,32 @@ export const FilterMenu = () => {
             </li>
           </ul>
         </li>
-        <li>
-          <p>Обід</p>
+        <li className={styles.filter_item}>
+          <p className={styles.filter_text}>Обід...</p>
+          <FaSortDown size={16} />
+          <ul className={styles.filter_subList}>
+            <li className={styles.filter_subItem}>
+              <p>Перші страви</p>
+            </li>
+            <li className={styles.filter_subItem}>
+              <p>Гарнір</p>
+            </li>
+            <li className={styles.filter_subItem}>
+              <p>Салати</p>
+            </li>
+          </ul>
         </li>
-        <li>
-          <p>Вечеря</p>
+        <li className={styles.filter_item}>
+          <p className={styles.filter_text}>Вечеря...</p>
+          <FaSortDown size={16} />
         </li>
-        <li>
-          <p>Салати</p>
+        <li className={styles.filter_item}>
+          <p className={styles.filter_text}>Салати...</p>
+          <FaSortDown size={16} />
         </li>
-        <li>
-          <p>Пісні страви</p>
+        <li className={styles.filter_item}>
+          <p className={styles.filter_text}>Пісні страви...</p>
+          <FaSortDown size={16} />
         </li>
       </ul>
     </div>
