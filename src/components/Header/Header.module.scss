@@ -10,8 +10,6 @@
     align-items: center;
 
     gap: 32px;
-    list-style: none;
-    margin-left: 543px;
     padding: 50px 0;
   }
 }
@@ -26,6 +24,29 @@
 // }
 .header__nav__list__item__text {
   color: var(--header-text-color);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.active_link {
+  background-color: var(--title-text-color);
+  border-radius: 5px;
+  color: var(--header-text-color);
+
+  padding: 10px;
+  width: 115px;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.link_nav {
+  color: var(--header-text-color);
+  padding: 10px;
+  width: 115px;
+
   font-size: 20px;
   font-style: normal;
   font-weight: 400;

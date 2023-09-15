@@ -4,12 +4,18 @@
     align-items: center;
     &:nth-child(2n) {
         flex-direction: row-reverse;
+        
     }
-    
+
+    &:nth-child(2n) .content {
+      margin-right: 120px;
+      margin-left: 0;
+    }
 }
 
 .content {
-    margin-left: 120px;
+
+  margin-left: 120px;
 }
 
 .title {
@@ -26,4 +32,8 @@
   font-weight: 300;
 
   color: var(--description-text-color);
+}
+
+.image {
+  border-radius: 15px;
 }

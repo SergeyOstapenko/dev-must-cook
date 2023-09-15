@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import { RecipesListItem } from "./RecipesListItem/RecipesListItem";
 import styles from "./RecipesList.module.scss";
 import { FilterMenu } from "../FilterMenu/FilterMenu";
@@ -9,10 +11,11 @@ export const RecipesList = () => {
       <FilterMenu />
       <h2 className={styles.recipesList_title}>Найпопулярніші рецепти</h2>
       <ul className={styles.recipesList}>
-        {recipes.map(({ avatar, name, id }) => (
-          <RecipesListItem key={id} avatar={avatar} name={name} />
+        {recipes.map(({ avatar, name, href, id  }) => (
+          <RecipesListItem key={id} avatar={avatar} name={name} href={href}/>
         ))}
       </ul>
+          <Link className={styles.btn_all}>Дивитись всі</Link>
     </div>
   );
 };

@@ -2,7 +2,7 @@ import styles from "./RecipesListItem.module.scss";
 import { Link } from "react-router-dom";
 import { FaInstagram, FaYoutube } from "react-icons/fa";
 
-export const RecipesListItem = ({ avatar, name }) => {
+export const RecipesListItem = ({ avatar, name, href }) => {
   return (
     <li className={styles.item}>
       <img
@@ -16,13 +16,13 @@ export const RecipesListItem = ({ avatar, name }) => {
         <p className={styles.name}>{name}</p>
         <ul className={styles.list}>
           <li className={styles.social}>
-            <Link className={styles.link}>
-              <FaYoutube color="black" size={20}/>
+            <Link className={styles.link} to={href} target="_blank" rel="noopener noreferrer">
+              <FaYoutube color="red" size={20}/>
             </Link>
           </li>
           <li className={styles.social}>
             <Link className={styles.link}>
-              <FaInstagram  color="black" size={20}/>
+              <FaInstagram  color="#E1306C" size={20}/>
             </Link>
           </li>
         </ul>

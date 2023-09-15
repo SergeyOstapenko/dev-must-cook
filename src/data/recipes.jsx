@@ -1,39 +1,47 @@
 
-import Img1 from '../images/1c0b6ea3-5c72-47bd-bc24-5887ff218c4a.jpeg';
-import Img2 from '../images/184c6913-6a3e-4621-a5ec-d87f1c0313e5.jpeg';
-import Img3 from '../images/854d4647-cf0a-4db3-a74e-769fc0e6a68a.jpeg';
-import Img4 from '../images/636249d2-42f4-4221-9fce-566eac1eb295.jpeg';
+import Img1 from '../images/Champignon.jpeg';
+import Img2 from '../images/Cookies-with-chocolate.jpeg';
+import Img3 from '../images/Cake-with-pears-and-chocolate.jpeg';
+import Img4 from '../images/Strudel-with-chicken-and-mushrooms.jpeg';
+import Img5 from '../images/American-pumpkin-pie.jpeg';
+import Img6 from '../images/Cottage-cheese-and-lemon-cake.jpeg';
 
 export const recipes = [
     {
       "avatar": Img1,
-      "name": "Mango",
-      "id": 1812
+      "name": "Пісочне печиво 'Шампіньйони'",
+      "href": "https://www.youtube.com/watch?v=bucjXzuj8E0",
+      "id": 1812,
+      
     },
     {
       "avatar": Img2,
-      "name": "Kiwi",
-
+      "name": "Печиво з шоколадною крихтою",
+      "href": "https://www.youtube.com/watch?v=mY13E3VGGok",
       "id": 1137
     },
     {
       "avatar": Img3,
-      "name": "Ajax",
+      "name": "Кекс з грушею та шоколадом",
+      "href": "https://www.youtube.com/watch?v=71Ed1X3e6Vw",
       "id": 1213
     },
     {
       "avatar": Img4,
-      "name": "Jay",
+      "name": "Штрудель з куркою та грибами",
+      "href": "https://www.youtube.com/watch?v=hspZuE0AMOc",
       "id": 1714
     },
     {
-      "avatar": Img4,
-      "name": "Poly",
-      "id": 1284
+      "avatar": Img5,
+      "name": "Американський гарбузовий пиріг",
+      "href": "https://www.youtube.com/watch?v=Bv1Z8scSWEE",
+      "id": 1285
     }, 
     {
-      "avatar": Img4,
-      "name": "Poly",
+      "avatar": Img6,
+      "name": "Творожно-лимонний кекс",
+      "href": "https://www.youtube.com/watch?v=U3GogYTwel0",
       "id": 1345
     }
   ]

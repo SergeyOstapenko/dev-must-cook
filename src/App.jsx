@@ -21,7 +21,7 @@ function App() {
       <Section>
         <Features></Features>
       </Section>
-      <Section title='Каталог'>
+      <Section title='Рецепти'>
       <RecipesList/>
       </Section>
       <Section title='Якість в деталях'>

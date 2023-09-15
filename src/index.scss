@@ -1,10 +1,12 @@
 :root {
   --header-text-color: #F5EBEB;
-  // --footer-bg-color: #2F303A;
+  --footer-text-color: #fff;
   --title-text-color: #A93B59;
   --description-text-color: #fff;
   --menu-filter-color: #FFFFFF;
+  --btn-all-color: #fff;
   --name-text-color: #000;
+  --footer-bg-color:#000;
   // --secondary-bg-color: #F5F4FA;
   // --item-br-color: #EEEEEE;
   --btn-hover-color: #A93B59;
@@ -32,7 +34,7 @@ body {
 }
 
 .hero {
-  background-image: url('./images/7869f274-279e-4c60-9f83-321ee383d134.jpeg');
+  background-image: url('./images/Hero.jpeg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
