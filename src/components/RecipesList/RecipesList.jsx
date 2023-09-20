@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import { RecipesListItem } from "./RecipesListItem/RecipesListItem";
 import styles from "./RecipesList.module.scss";
@@ -15,7 +15,7 @@ export const RecipesList = () => {
           <RecipesListItem key={id} avatar={avatar} name={name} href={href}/>
         ))}
       </ul>
-          <Link className={styles.btn_all}>Дивитись всі</Link>
+          <NavLink className={styles.btn_all} to="/recipes">Дивитись всі</NavLink>
     </div>
   );
 };
