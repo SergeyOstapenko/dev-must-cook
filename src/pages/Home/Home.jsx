@@ -6,11 +6,11 @@ import { DescriptionList } from "../../components/DescriptionList/DescriptionLis
 import { Hero } from "../../components/Hero/Hero";
 import { Footer } from "../../components/Footer/Footer";
 
-export const Home = ()=> {
-    return (
-        <>
-            <Header></Header>
-            <Section>
+export const Home = () => {
+  return (
+    <>
+      <Header></Header>
+      <Section>
         <Hero></Hero>
       </Section>
       <Section>
@@ -19,12 +19,12 @@ export const Home = ()=> {
       <Section title="Рецепти">
         <RecipesList />
       </Section>
-      <Section title="Якість в деталях">
+      <Section title="Якість в деталях" right>
         <DescriptionList />
       </Section>
-      <Section>
+      
         <Footer></Footer>
-      </Section>
-        </>
-    )
-}
+      
+    </>
+  );
+};

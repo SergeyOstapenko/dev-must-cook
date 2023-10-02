@@ -5,3 +5,24 @@
 
 }
 
+
+.rightTitle {
+    color: var(--title-text-color);
+    width: 491px;
+    border-bottom: 2px solid #A93B59;
+    text-align-last: left;
+    font-family: var(--font-title);
+    font-weight: 600;
+    font-size: 36px;
+    margin-left: auto;
+}
+
+.leftTitle {
+    color: var(--title-text-color);
+    width: 491px;
+    border-bottom: 2px solid #A93B59;
+    text-align-last: right;
+    font-family: var(--font-title);
+    font-weight: 600;
+    font-size: 36px;
+}

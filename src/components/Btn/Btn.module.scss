@@ -3,7 +3,7 @@
     border-radius: 15px;
     padding: 16px 125px;
     display: inline-block;
-    background-color: var(--btn-hover-color);
+    background-color: var(--btn-color);
     color: var(--header-text-color);
     font-weight: 400;
     font-size: 24px;
@@ -13,4 +13,8 @@
     text-transform: uppercase;
     border: 1px solid rgba(0,0,0,0);
     margin-left: 110px;
+
+    &:hover {
+        background-color: var(--btn-hover-color);
+    }
 }

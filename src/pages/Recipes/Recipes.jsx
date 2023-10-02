@@ -10,9 +10,8 @@ export const Recipes = () => {
       <Section>
         <RecipesList></RecipesList>
       </Section>
-      <Section>
-        <Footer></Footer>
-      </Section>
+
+      <Footer></Footer>
     </>
   );
 };

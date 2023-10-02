@@ -9,13 +9,21 @@
   --footer-bg-color:#000;
   // --secondary-bg-color: #F5F4FA;
   // --item-br-color: #EEEEEE;
-  --btn-hover-color: #A93B59;
+  --btn-color: #A93B59;
+  --btn-hover-color: #6d2639;
   // --icon-bg-features-color: #F5F4FA;
   // --icon-fill: #AFB1B8;
   // --icon-hover: #FFFFFF;
-  // --overlay-color: rgba(0, 0, 0, 0.2);
+  // --overlay-color: rgba(0, 0, 0, 0.2`
   --font-body: 'Source Sans Pro', sans-serif;
   --font-title: 'Playfair Display';
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #000;
 }
 
 * {
@@ -41,6 +49,11 @@ body {
   padding-top: 44px;
 }
 
+.card {
+  display: flex;
+  gap: 20px;
+}
+
 h1, h2, h3 {
   margin: 0;
 }
@@ -53,16 +66,6 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.title {
-  color: var(--title-text-color);
-  width: 491px;
-  border-bottom: 2px solid #A93B59;
-  text-align-last: right;
-  font-family: var(--font-title);
-  font-weight: 600;
-  font-size: 36px;
 }
 
 .description {
@@ -78,4 +81,8 @@ p {
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
+    margin-top: auto;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: black;
 }

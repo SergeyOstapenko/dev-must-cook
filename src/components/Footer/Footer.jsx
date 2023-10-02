@@ -22,14 +22,14 @@ export const Footer = () => {
         </ul>
       </nav>
       <div>
-        <Link>
+        <NavLink to="/">
           <FaPizzaSlice color="white" size={24} />
-        </Link>
+        </NavLink>
       </div>
       <form className={styles.footer_form}>
         <p className={styles.footer_text}>Підпишіться на розсилку</p>
         <div className={styles.send_container}>
-          <input type="text" placeholder="E-mail" />
+          <input type="text" placeholder="E-mail" className={styles.input}/>
           <button type="submit" className={styles.button_send}>
             Підписатись
           </button>

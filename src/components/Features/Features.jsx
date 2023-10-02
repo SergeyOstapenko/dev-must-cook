@@ -9,13 +9,13 @@ export const Features = () => {
           <div className={styled.features_icon}><FaPencilAlt color="white" size={40}/></div>
           <p className={styled.features_text}>Щоденне оновлення рецептів</p>
         </li>
-        <li className={styled.features_item}>
+        {/* <li className={styled.features_item}>
           <div className={styled.features_icon}><FaRoute color="white" size={40}/></div>
           <p className={styled.features_text}>Безкоштовна доставка в будь яку точку міста</p>
-        </li>
+        </li> */}
         <li className={styled.features_item}>
           <div className={styled.features_icon}><FaGlobeEurope color="white" size={40}/></div>
-          <p className={styled.features_text}>Більше 1000 рецептів з усього світу</p>
+          <p className={styled.features_text}>Більше 1000 рецептів</p>
         </li>
       </ul>
     </div>

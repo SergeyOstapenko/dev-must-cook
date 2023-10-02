@@ -1,15 +1,15 @@
-import { NavLink, Routes, Route } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 
 import styles from "./Header.module.scss";
 import { FaPizzaSlice } from "react-icons/fa";
-// import { Link, NavLink } from 'react-router-dom';
+
 
 export const Header = () => {
   return (
     <header className={styles.header}>
       <div className="container">
         <nav className={styles.header__nav}>
-          <NavLink>
+          <NavLink to="/">
             <FaPizzaSlice color="white" size={24} />
           </NavLink>
           <ul className={styles.header__nav__list}>
