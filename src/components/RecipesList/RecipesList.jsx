@@ -1,14 +1,13 @@
-import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { RecipesListItem } from "./RecipesListItem/RecipesListItem";
 import styles from "./RecipesList.module.scss";
 import { FilterMenu } from "../FilterMenu/FilterMenu";
 import { recipes } from "../../data/recipes";
 
-export const RecipesList = () => {
+export const RecipesList = ({visibleRecipes}) => {
+  const displayedRecipes = recipes.slice(0, visibleRecipes);
   const [searchResults, setSearchResults] = useState([]);
   const handleSearch = (query) => {
-    // Выполните поиск в массиве recipes по запросу query
     const filteredResults = recipes.filter(({ title }) =>
       title.toLowerCase().includes(query.toLowerCase())
     );
@@ -30,7 +29,7 @@ export const RecipesList = () => {
                 id={id}
               />
             ))
-          : recipes.map(({ avatar, title, href, id }) => (
+          : displayedRecipes.map(({ avatar, title, href, id }) => (
               <RecipesListItem
                 key={id}
                 avatar={avatar}
@@ -40,9 +39,6 @@ export const RecipesList = () => {
               />
             ))}
       </ul>
-      <NavLink className={styles.btn_all} to="/recipes">
-        Дивитись всі
-      </NavLink>
     </div>
   );
 };

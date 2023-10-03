@@ -4,10 +4,11 @@ import styles from './DescriptionList.module.scss';
 import {DescriptionListItem} from './DescriptionListItem/DescriptionListItem'
 
 export const DescriptionList = () => {
+  const limitedDescription = recipes.slice(2,5)
   return (
     <div className="container">
       <ul className={styles.list}>
-        {recipes.map(({ avatar,title, description, id }) => (
+        {limitedDescription.map(({ avatar,title, description, id }) => (
           <DescriptionListItem
             key={id}
             avatar={avatar}
