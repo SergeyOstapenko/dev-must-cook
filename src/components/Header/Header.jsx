@@ -9,8 +9,8 @@ export const Header = () => {
     <header className={styles.header}>
       <div className="container">
         <nav className={styles.header__nav}>
-          <NavLink to="/">
-            <FaPizzaSlice color="white" size={24} />
+          <NavLink className={styles.logo} to="/">
+            Must Cook
           </NavLink>
           <ul className={styles.header__nav__list}>
             <li className={styles.header__nav__list__item}>

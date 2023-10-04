@@ -13,15 +13,17 @@
     padding: 50px 0;
   }
 }
+.logo {
+  text-transform: uppercase;
+  color: white;
+  font-size: 40px;
+  font-weight: 100;
+  // font-family: var(--font-logo);
 
-// .isActive {
-//   text-decoration: none;
-//   color: white;
-//   font-weight: 500;
-//   &.active {
-//     color: red;
-//   }
-// }
+  width: 63px;
+}
+
+
 .header__nav__list__item__text {
   color: var(--header-text-color);
   font-size: 20px;
