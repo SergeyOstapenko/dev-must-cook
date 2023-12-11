@@ -4,12 +4,13 @@ import { Home } from "./pages/Home/Home";
 import { Recipes } from "./pages/Recipes/Recipes";
 import { About } from "./pages/About/About";
 import { RecipesCard } from "./components/RecipesCard/RecipesCard";
+import { ScrollToTop } from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
+    <ScrollToTop/>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/recipes" element={<Recipes />}></Route>

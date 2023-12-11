@@ -22,7 +22,7 @@ export const Recipes = () => {
         <RecipesList visibleRecipes={visibleRecipes}></RecipesList>
         {visibleRecipes < recipes.length && (
           <NavLink className={styles.btn_all} onClick={loadMoreRecipes}>
-            Показать еще
+            Показати ще
           </NavLink>
         )}
       </Section>
